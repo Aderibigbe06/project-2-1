@@ -1,95 +1,83 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client"
+
+import {Heading, Center, Image, Text, Box} from "@chakra-ui/react"
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
+    {/* <Center>
+      <Image src = "/images/frame1.png" alt = "Frame1" width = "142px" height = "45px" top = "15px" left = "29px" />
+      <Heading width = "526px" height = "47px" top = "13.5px" left = "281px" gap = "32px">Home</Heading>
+      <Heading width = "526px" height = "47px" top = "13.5px" left = "281px" gap = "32px">Product</Heading>
+      <Heading width = "526px" height = "47px" top = "13.5px" left = "281px" gap = "32px">Contact</Heading>
+      <Heading width = "526px" height = "47px" top = "13.5px" left = "281px" gap = "32px">Partner with us!</Heading>
+      <Image src = "/images/frame2.png" alt = "Frame2" width = "148px" height = "47px" top = "13px" left = "924px" />
+    </Center> */}
+   
+    <Image src = "/images/top nav.png" alt = "top nav" width = "1087px" height = "74px" top = "38px" left = "213px" mb = "20" marginTop = "50px" />
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+
+    <div style={{ display: "flex", justifyContent: "center", position: "relative" }}>
+    <Image src="/images/frame12.png" alt="Frame 12" width="348px" height="336px" style={{ borderRadius: "20px", position: "absolute", top: "-100px", left: "420px", zIndex: 2,}} />
     </div>
+    
+
+
+    <Center> 
+      <Image src = "/images/frame3.png" alt = "Frame3" width = "365px" height = "226px" position = "relative" left = "70px" top = "50px"/>
+      
+      <Box>
+      <Text width = "732px" height = "126px" font = "Ubuntu" fontWeight = "500" fontSize = "55px" lineHeight = "100%" letterSpacing = "0%" color = "#3B3B3B" textAlign = "center">
+        Powering Convenience, <br />
+        Fueling Sustainability.
+      </Text>
+
+      <Text width = "762px" height = "72px" font = "Poppins" fontWeight = "400" fontSize = "26px" lineHeight = "100%" letterSpacing = "0%" color = "#3B3B3B" textAlign = "center">
+        Explore the best energy solution for your home or business <br />
+        while finding fuel when you need it most.
+      </Text>
+      </Box>
+      
+      <Image src = "/images/frame 5.png" alt = "Frame 5" width = "279px" height = "273px" position = "relative" right = "90px" top = "-20px" />
+    </Center>
+
+
+
+    <div style = {{display: "flex", justifyContent: "center"}}>
+    <Image src = "/images/frame2.png" alt = "Frame2" width = "148px" height = "47px" top = "527px" left = "690px"  mb = "20"/>
+    </div>
+    
+   
+    <div style = {{display: "flex", justifyContent: "center"}}>
+    <Image src = "/images/frame 6.png" alt = "Frame 6" width = "95%" maxHeight = "1100px" height = "auto" mb = "12" borderRadius = "25px"/>
+    </div>
+              
+    
+    <div style = {{display: "flex", justifyContent: "center"}}>
+    <Image src = "/images/frame 7.png" alt = "Frame 7" width = "95%" maxHeight = "1100px" height = "auto" mb = "12" borderRadius = "25px"/>
+    </div>
+    
+
+    <div style = {{display: "flex", justifyContent: "center"}}>
+    <Image src = "/images/frame 8.png" alt = "Frame 8" width = "95%" maxHeight = "900px" height = "auto" mb = "12" />
+    </div>
+
+
+    <div style = {{display: "flex", justifyContent: "center"}}>
+    <Image src = "/images/frame 9.png" alt = "Frame 9" width = "92%" maxHeight = "400px" height = "auto" mb = "12" borderRadius = "25px"/>
+    </div> 
+
+
+    <div style = {{display: "flex", justifyContent: "center"}}>
+    <Image src = "/images/frame10.png" alt = "Frame10" width = "95%" maxHeight = "400px" height = "auto" mb = "12" />
+    </div>
+   
+
+    <div style = {{display: "flex", justifyContent: "center"}}>
+    <Image src = "/images/frame11.png" alt = "Frame11" width = "95%" maxHeight = "550px" height = "auto" />
+    </div>
+
+    </>
   );
 }
